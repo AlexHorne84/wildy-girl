@@ -1,0 +1,292 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Wildy Girl — A Mother's Journey Through Crisis, Hope, and Healing | Alison Horne"
+  description="The official website for Wildy Girl by Alison Horne. A powerful memoir about adolescent crisis, family resilience, and the journey toward healing."
+>
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-cream-dark/30 transition-shadow duration-300">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="#" class="font-serif text-xl font-semibold text-forest tracking-wide">Wildy Girl</a>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <li><a href="#about" class="hover:text-orange transition-colors">About</a></li>
+        <li><a href="#book" class="hover:text-orange transition-colors">The Book</a></li>
+        <li><a href="#reviews" class="hover:text-orange transition-colors">Reviews</a></li>
+        <li><a href="#news" class="hover:text-orange transition-colors">News & Updates</a></li>
+        <li><a href="#contact" class="hover:text-orange transition-colors">Contact</a></li>
+        <li><span class="text-cream-dark cursor-default" title="Coming soon">Blog</span></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-cream-dark/30 bg-cream/95 backdrop-blur-sm">
+      <ul class="flex flex-col px-6 py-4 gap-4 text-sm font-medium tracking-wide">
+        <li><a href="#about" class="block hover:text-orange transition-colors">About</a></li>
+        <li><a href="#book" class="block hover:text-orange transition-colors">The Book</a></li>
+        <li><a href="#reviews" class="block hover:text-orange transition-colors">Reviews</a></li>
+        <li><a href="#news" class="block hover:text-orange transition-colors">News & Updates</a></li>
+        <li><a href="#contact" class="block hover:text-orange transition-colors">Contact</a></li>
+        <li><span class="text-cream-dark cursor-default">Blog (Coming Soon)</span></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="pt-28 pb-20 md:pt-36 md:pb-28 px-6">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+        <!-- Book Cover -->
+        <div class="w-64 md:w-80 shrink-0">
+          <img
+            src="/images/WildyGirl_CVR_RGB.jpg"
+            alt="Wildy Girl book cover — A Mother's Journey Through Crisis, Hope, and Healing by Alison Horne"
+            class="w-full rounded-sm shadow-2xl"
+          />
+        </div>
+
+        <!-- Hero Text -->
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-4">
+            Wildy Girl
+          </h1>
+          <p class="text-lg md:text-xl text-forest-light font-serif italic mb-2">
+            A Mother's Journey Through Crisis, Hope, and Healing
+          </p>
+          <p class="text-base text-forest-light mb-8">by Alison Horne</p>
+          <a
+            href="#book"
+            class="inline-block bg-orange text-light px-8 py-3 rounded-md font-semibold text-sm tracking-wide hover:bg-orange/90 transition-colors shadow-md"
+          >
+            Buy the Book
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT THE AUTHOR ============ -->
+    <section id="about" class="py-20 md:py-28 px-6 bg-cream-dark/40">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-semibold text-center mb-16">About the Author</h2>
+
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-16">
+          <!-- Author Photo -->
+          <div class="w-56 md:w-72 shrink-0">
+            <img
+              src="/images/author.jpeg"
+              alt="Alison Horne, author of Wildy Girl"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+
+          <!-- Bio -->
+          <div class="max-w-2xl space-y-5 text-base leading-relaxed">
+            <p>
+              Alison Horne is a healthcare executive, author, and parent advocate with more than 30 years of experience leading national sales organizations in wellness, health navigation, and family-building solutions. Throughout her career, she has partnered with employers and healthcare organizations to improve access, advocacy, and outcomes for families navigating complex care journeys.
+            </p>
+            <p>
+              She is also the author of <em>Wildy Girl: A Mother's Journey Through Crisis, Hope, and Healing</em>, a powerful memoir chronicling her family's experience with adolescent trauma, addiction, and therapeutic placement. Her story bridges professional expertise and lived experience, offering a rare perspective on the emotional, financial, and systemic realities families face when a child is in crisis.
+            </p>
+            <p>
+              Alison speaks candidly about parental shame, resilience, and the "parallel process" of family healing. Her work invites honest dialogue around adolescent mental health, therapeutic intervention, and rebuilding trust after trauma.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE BOOK ============ -->
+    <section id="book" class="py-20 md:py-28 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-semibold text-center mb-16">The Book</h2>
+
+        <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+          <!-- Synopsis -->
+          <div class="max-w-2xl space-y-5 text-base leading-relaxed order-2 md:order-1">
+            <p>
+              <em>Wildy Girl</em> is a memoir about what happens when the life you've carefully built starts to fracture — and the courageous, imperfect journey to put it back together.
+            </p>
+            <p>
+              When Alison Horne's daughter began to spiral into crisis, Alison was forced to confront every parent's worst nightmare: the realization that love alone isn't enough. This deeply honest account follows her family through the harrowing terrain of adolescent mental health challenges, addiction, therapeutic wilderness programs, and the long road toward healing.
+            </p>
+            <p>
+              Written with warmth, vulnerability, and hard-won wisdom, <em>Wildy Girl</em> is both a survival story and a guidebook — for any parent who has ever felt lost, ashamed, or alone in the fight for their child.
+            </p>
+
+            <!-- Purchase Links -->
+            <div class="pt-6">
+              <h3 class="text-sm font-semibold uppercase tracking-widest text-gold mb-4">Available At</h3>
+              <div class="flex flex-wrap gap-4">
+                <a href="#" class="inline-block bg-forest text-light px-6 py-3 rounded-md text-sm font-semibold hover:bg-forest-light transition-colors">
+                  Amazon
+                </a>
+                <a href="#" class="inline-block border-2 border-forest text-forest px-6 py-3 rounded-md text-sm font-semibold hover:bg-forest hover:text-light transition-colors">
+                  Barnes & Noble
+                </a>
+              </div>
+              <p class="text-xs text-forest-light mt-3">Purchase links coming soon</p>
+            </div>
+          </div>
+
+          <!-- Book Cover (secondary) -->
+          <div class="w-48 md:w-64 shrink-0 order-1 md:order-2">
+            <img
+              src="/images/WildyGirl_CVR_RGB.jpg"
+              alt="Wildy Girl book cover"
+              class="w-full rounded-sm shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS / PRAISE ============ -->
+    <section id="reviews" class="py-20 md:py-28 px-6 bg-forest text-light">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-semibold text-center mb-16">Praise for Wildy Girl</h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Review 1 -->
+          <blockquote class="bg-forest-light/30 rounded-lg p-8">
+            <p class="text-base leading-relaxed italic mb-4">
+              "A raw and beautifully written memoir that captures the heartbreak and hope of parenting through crisis. Alison's honesty will make every reader feel less alone."
+            </p>
+            <footer class="text-sm text-light/70">— Reader Review</footer>
+          </blockquote>
+
+          <!-- Review 2 -->
+          <blockquote class="bg-forest-light/30 rounded-lg p-8">
+            <p class="text-base leading-relaxed italic mb-4">
+              "This book is a lifeline for parents navigating the unthinkable. Horne writes with the clarity of someone who has walked through fire and come out the other side with wisdom to share."
+            </p>
+            <footer class="text-sm text-light/70">— Reader Review</footer>
+          </blockquote>
+
+          <!-- Review 3 -->
+          <blockquote class="bg-forest-light/30 rounded-lg p-8">
+            <p class="text-base leading-relaxed italic mb-4">
+              "Required reading for any parent, educator, or therapist working with struggling adolescents. This memoir breaks the silence around family trauma with courage and grace."
+            </p>
+            <footer class="text-sm text-light/70">— Reader Review</footer>
+          </blockquote>
+
+          <!-- Review 4 -->
+          <blockquote class="bg-forest-light/30 rounded-lg p-8">
+            <p class="text-base leading-relaxed italic mb-4">
+              "Wildy Girl doesn't just tell a story — it starts a conversation. One that families across the country desperately need to have."
+            </p>
+            <footer class="text-sm text-light/70">— Reader Review</footer>
+          </blockquote>
+        </div>
+
+        <p class="text-center text-sm text-light/50 mt-10">Reviews will be updated as they become available.</p>
+      </div>
+    </section>
+
+    <!-- ============ NEWS & UPDATES ============ -->
+    <section id="news" class="py-20 md:py-28 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-semibold text-center mb-16">News & Updates</h2>
+
+        <div class="space-y-8">
+          <article class="border-b border-cream-dark/50 pb-8">
+            <time class="text-xs font-semibold uppercase tracking-widest text-gold">2026</time>
+            <h3 class="text-xl font-serif font-semibold mt-2 mb-3">Wildy Girl — Coming Soon</h3>
+            <p class="text-base leading-relaxed text-forest-light">
+              The official website for <em>Wildy Girl</em> is live. Stay tuned for book launch details, events, and media appearances.
+            </p>
+          </article>
+
+          <article class="border-b border-cream-dark/50 pb-8">
+            <time class="text-xs font-semibold uppercase tracking-widest text-gold">Upcoming</time>
+            <h3 class="text-xl font-serif font-semibold mt-2 mb-3">Events & Speaking</h3>
+            <p class="text-base leading-relaxed text-forest-light">
+              Alison is available for speaking engagements, book signings, and media interviews. Reach out via the contact section below.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="py-20 md:py-28 px-6 bg-cream-dark/40">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-serif font-semibold mb-6">Get in Touch</h2>
+        <p class="text-base text-forest-light mb-10 max-w-lg mx-auto">
+          For press inquiries, speaking requests, or to share how the book has impacted you, reach out directly.
+        </p>
+        <a
+          href="mailto:hello@wildygirl.com"
+          class="inline-block bg-orange text-light px-8 py-3 rounded-md font-semibold text-sm tracking-wide hover:bg-orange/90 transition-colors shadow-md"
+        >
+          Send an Email
+        </a>
+        <p class="text-xs text-forest-light mt-4">hello@wildygirl.com</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="py-12 px-6 bg-forest text-light/70">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+      <div class="text-center md:text-left space-y-1">
+        <p>&copy; 2026 by Alison Horne. All rights reserved.</p>
+        <p>ISBN: Pending</p>
+      </div>
+
+      <a
+        href="#"
+        class="text-light/50 hover:text-light transition-colors text-xs uppercase tracking-widest"
+      >
+        Back to Top &uarr;
+      </a>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    btn?.addEventListener('click', () => {
+      const isOpen = !menu?.classList.contains('hidden');
+      menu?.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      if (isOpen) {
+        menuIcon?.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+      } else {
+        menuIcon?.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      }
+    });
+
+    // Close mobile menu when clicking a nav link
+    menu?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        btn?.setAttribute('aria-expanded', 'false');
+        menuIcon?.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+      });
+    });
+
+    // Add shadow to navbar on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        navbar?.classList.add('shadow-md');
+      } else {
+        navbar?.classList.remove('shadow-md');
+      }
+    });
+  </script>
+</Layout>
