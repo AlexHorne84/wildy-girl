@@ -8,8 +8,8 @@
   --color-orange: #D4793C;
   --color-gold: #C8963E;
   --color-light: #F5F1EB;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'EB Garamond', 'Times New Roman', serif;
 }
 
 html {
@@ -17,11 +17,16 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   color: var(--color-forest);
   background-color: var(--color-cream);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }

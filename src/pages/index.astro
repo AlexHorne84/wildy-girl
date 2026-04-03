@@ -13,12 +13,13 @@ import Layout from '../layouts/Layout.astro';
 
       <!-- Desktop Nav -->
       <ul class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
-        <li><a href="#about" class="hover:text-orange transition-colors">About</a></li>
+        <li><a href="#" class="hover:text-orange transition-colors">Home</a></li>
+        <li><a href="#about" class="hover:text-orange transition-colors">About the Author</a></li>
         <li><a href="#book" class="hover:text-orange transition-colors">The Book</a></li>
         <li><a href="#reviews" class="hover:text-orange transition-colors">Reviews</a></li>
         <li><a href="#news" class="hover:text-orange transition-colors">News & Updates</a></li>
         <li><a href="#contact" class="hover:text-orange transition-colors">Contact</a></li>
-        <li><span class="text-cream-dark cursor-default" title="Coming soon">Blog</span></li>
+        <li><a href="#podcast" class="hover:text-orange transition-colors">Podcast</a></li>
       </ul>
 
       <!-- Mobile Menu Button -->
@@ -32,12 +33,13 @@ import Layout from '../layouts/Layout.astro';
     <!-- Mobile Nav -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-cream-dark/30 bg-cream/95 backdrop-blur-sm">
       <ul class="flex flex-col px-6 py-4 gap-4 text-sm font-medium tracking-wide">
-        <li><a href="#about" class="block hover:text-orange transition-colors">About</a></li>
+        <li><a href="#" class="block hover:text-orange transition-colors">Home</a></li>
+        <li><a href="#about" class="block hover:text-orange transition-colors">About the Author</a></li>
         <li><a href="#book" class="block hover:text-orange transition-colors">The Book</a></li>
         <li><a href="#reviews" class="block hover:text-orange transition-colors">Reviews</a></li>
         <li><a href="#news" class="block hover:text-orange transition-colors">News & Updates</a></li>
         <li><a href="#contact" class="block hover:text-orange transition-colors">Contact</a></li>
-        <li><span class="text-cream-dark cursor-default">Blog (Coming Soon)</span></li>
+        <li><a href="#podcast" class="block hover:text-orange transition-colors">Podcast</a></li>
       </ul>
     </div>
   </nav>
@@ -63,7 +65,7 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-lg md:text-xl text-forest-light font-serif italic mb-2">
             A Mother's Journey Through Crisis, Hope, and Healing
           </p>
-          <p class="text-base text-forest-light mb-8">by Alison Horne</p>
+          <p class="text-base text-forest-light mb-8">by Alison M. Horne</p>
           <a
             href="#book"
             class="inline-block bg-orange text-light px-8 py-3 rounded-md font-semibold text-sm tracking-wide hover:bg-orange/90 transition-colors shadow-md"
@@ -113,6 +115,9 @@ import Layout from '../layouts/Layout.astro';
         <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <!-- Synopsis -->
           <div class="max-w-2xl space-y-5 text-base leading-relaxed order-2 md:order-1">
+            <p class="text-xl md:text-2xl font-serif font-bold italic leading-snug text-forest">
+              "Would you send your child away to save their life? I did — and it shattered me before it saved us."
+            </p>
             <p>
               <em>Wildy Girl</em> is a memoir about what happens when the life you've carefully built starts to fracture — and the courageous, imperfect journey to put it back together.
             </p>
@@ -130,11 +135,8 @@ import Layout from '../layouts/Layout.astro';
                 <a href="#" class="inline-block bg-forest text-light px-6 py-3 rounded-md text-sm font-semibold hover:bg-forest-light transition-colors">
                   Amazon
                 </a>
-                <a href="#" class="inline-block border-2 border-forest text-forest px-6 py-3 rounded-md text-sm font-semibold hover:bg-forest hover:text-light transition-colors">
-                  Barnes & Noble
-                </a>
               </div>
-              <p class="text-xs text-forest-light mt-3">Purchase links coming soon</p>
+              <p class="text-xs text-forest-light mt-3">Purchase link coming soon</p>
             </div>
           </div>
 
@@ -232,6 +234,50 @@ import Layout from '../layouts/Layout.astro';
           Send an Email
         </a>
         <p class="text-xs text-forest-light mt-4">hello@wildygirl.com</p>
+      </div>
+    </section>
+
+    <!-- ============ PODCAST ============ -->
+    <section id="podcast" class="py-20 md:py-28 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-semibold text-center mb-6">Podcast</h2>
+        <p class="text-center text-base text-forest-light mb-16 max-w-lg mx-auto">
+          Monthly conversations about family, healing, and the journey through crisis. New episodes released each month.
+        </p>
+
+        <div class="space-y-8">
+          <!-- Episode Template -->
+          <article class="border border-cream-dark/50 rounded-lg p-8 bg-cream-dark/20">
+            <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+              <div class="shrink-0">
+                <span class="inline-block text-xs font-semibold uppercase tracking-widest text-gold">Coming Soon</span>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-serif font-semibold mb-2">Episode 1 — Coming Soon</h3>
+                <p class="text-sm text-forest-light leading-relaxed">
+                  The first episode of the Wildy Girl podcast is in production. Stay tuned for honest conversations about parenting through crisis and the road to healing.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Podcast Providers -->
+        <div class="mt-12 text-center">
+          <h3 class="text-sm font-semibold uppercase tracking-widest text-gold mb-6">Listen On</h3>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#" class="inline-block border-2 border-forest text-forest px-5 py-2 rounded-md text-sm font-semibold hover:bg-forest hover:text-light transition-colors">
+              Apple Podcasts
+            </a>
+            <a href="#" class="inline-block border-2 border-forest text-forest px-5 py-2 rounded-md text-sm font-semibold hover:bg-forest hover:text-light transition-colors">
+              Spotify
+            </a>
+            <a href="#" class="inline-block border-2 border-forest text-forest px-5 py-2 rounded-md text-sm font-semibold hover:bg-forest hover:text-light transition-colors">
+              YouTube
+            </a>
+          </div>
+          <p class="text-xs text-forest-light mt-4">Podcast links will be updated when episodes are available.</p>
+        </div>
       </div>
     </section>
   </main>
