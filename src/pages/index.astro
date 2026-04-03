@@ -47,9 +47,9 @@ import Layout from '../layouts/Layout.astro';
   <main>
     <!-- ============ HERO ============ -->
     <section class="pt-28 pb-20 md:pt-36 md:pb-28 px-6">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+      <div class="max-w-3xl mx-auto flex flex-col items-center text-center gap-10">
         <!-- Book Cover -->
-        <div class="w-64 md:w-80 shrink-0">
+        <div class="w-64 md:w-72">
           <img
             src="/images/WildyGirl_CVR_RGB.jpg"
             alt="Wildy Girl book cover — A Mother's Journey Through Crisis, Hope, and Healing by Alison Horne"
@@ -58,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Hero Text -->
-        <div class="text-center md:text-left">
+        <div>
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-4">
             Wildy Girl
           </h1>
@@ -81,9 +81,9 @@ import Layout from '../layouts/Layout.astro';
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-semibold text-center mb-16">About the Author</h2>
 
-        <div class="flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-16">
+        <div class="flex flex-col items-center gap-12">
           <!-- Author Photo -->
-          <div class="w-56 md:w-72 shrink-0">
+          <div class="w-56 md:w-64">
             <img
               src="/images/author.jpeg"
               alt="Alison Horne, author of Wildy Girl"
@@ -92,7 +92,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
 
           <!-- Bio -->
-          <div class="max-w-2xl space-y-5 text-base leading-relaxed">
+          <div class="max-w-2xl space-y-5 text-base leading-relaxed text-center">
             <p>
               Alison Horne is a healthcare executive, author, and parent advocate with more than 30 years of experience leading national sales organizations in wellness, health navigation, and family-building solutions. Throughout her career, she has partnered with employers and healthcare organizations to improve access, advocacy, and outcomes for families navigating complex care journeys.
             </p>
@@ -112,9 +112,18 @@ import Layout from '../layouts/Layout.astro';
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-semibold text-center mb-16">The Book</h2>
 
-        <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+        <div class="flex flex-col items-center gap-12">
+          <!-- Book Cover (secondary) -->
+          <div class="w-48 md:w-56">
+            <img
+              src="/images/WildyGirl_CVR_RGB.jpg"
+              alt="Wildy Girl book cover"
+              class="w-full rounded-sm shadow-xl"
+            />
+          </div>
+
           <!-- Synopsis -->
-          <div class="max-w-2xl space-y-5 text-base leading-relaxed order-2 md:order-1">
+          <div class="max-w-2xl space-y-5 text-base leading-relaxed text-center">
             <p class="text-xl md:text-2xl font-serif font-bold italic leading-snug text-forest">
               "Would you send your child away to save their life? I did — and it shattered me before it saved us."
             </p>
@@ -131,22 +140,13 @@ import Layout from '../layouts/Layout.astro';
             <!-- Purchase Links -->
             <div class="pt-6">
               <h3 class="text-sm font-semibold uppercase tracking-widest text-gold mb-4">Available At</h3>
-              <div class="flex flex-wrap gap-4">
+              <div class="flex flex-wrap justify-center gap-4">
                 <a href="#" class="inline-block bg-forest text-light px-6 py-3 rounded-md text-sm font-semibold hover:bg-forest-light transition-colors">
                   Amazon
                 </a>
               </div>
               <p class="text-xs text-forest-light mt-3">Purchase link coming soon</p>
             </div>
-          </div>
-
-          <!-- Book Cover (secondary) -->
-          <div class="w-48 md:w-64 shrink-0 order-1 md:order-2">
-            <img
-              src="/images/WildyGirl_CVR_RGB.jpg"
-              alt="Wildy Girl book cover"
-              class="w-full rounded-sm shadow-xl"
-            />
           </div>
         </div>
       </div>
